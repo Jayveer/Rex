@@ -65,7 +65,7 @@ void CLI::processFile() {
 }
 
 bool CLI::checkInput() {
-	if (argc > 1 && argc < 3) return true;
+	if (argc > 1 && argc <= 3) return true;
 	printUsage();
 	return false;
 }
